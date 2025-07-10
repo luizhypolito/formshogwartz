@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lora:ital,wght@0,400..700;1,400..700&family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lora:ital,wght@0,400..700;1,400..700&family=Quicksand:wght@300..700&display=swap');
+
+.fundo {
+    background-color:#00001b;
+}
+
+.grupo-nome {
+    position: relative;
+    font-family: "EB Garamond", serif;
+
+}
+
+.borda {
+    border: solid white;
+    border-radius: 10px;
+    padding: 0 10mm 0 8mm;
+    width: 900px;
+    align-content: center;
+    background-color: #1E1E1E;
+
+}
+
+.container {
+    
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+}
+
+.titulo {
+    color: rgb(6, 6, 6);
+    font-family: "Cinzel Decorative", serif;
+    background-color: white;
+    border-radius: 10px 60px 30px;
+    width: 800px;
+    text-align: center;
+}
+
+.titulop {
+    color: rgb(197, 150, 12);
+    font-family: "Cinzel Decorative", serif;
+    width: 1000px;
+    text-align: center;
+    font-size: 45px;
+}
+
+
+.texto {
+    font-family: "EB Garamond", serif;
+    color: rgb(197, 150, 12);
+    font-size: 28px;
+
+    margin-bottom: 0%;
+}
+
+.textop {
+    font-family: "EB Garamond", serif;
+    color: rgb(254, 254, 253);
+    font-size: 20px;
+}
+
+.tamanhoinput {
+    width: auto;
+    position: auto;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.alinhar {
+    display: inline-block;
+}
+
+.checkbox-groupitem {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    background-color: #1E1E1E;
+    color: #ffffff;
+    padding: 12px 16px;
+    margin: 8px auto;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    font-family: "EB Garamond", serif;
+    font-size: 16px;
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+h1{
+    display: block;
+    margin: 8px auto;
+    margin-bottom: 0%;
+}
+
+text{
+    display: block;
+    margin: 8px auto;
+}
+
+select:focus {
+    outline: none;
+    border-color: #e6b800;
+    background-color: #1E1E1E;
+    box-shadow: 0 0 10px rgba(230, 184, 0, 0.6);
+}
+
+select option {
+    background-color: #1E1E1E;
+    color: #ffffff;
+    font-family: "EB Garamond", serif;
+}
+
+/* Estilização do grupo */
+.checkbox-groupitem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+/* Checkbox base (quadrado) */
+input[type="checkbox"] {
+    appearance: none;
+    width: 22px;
+    height: 22px;
+    border: 2px solid #e6b800;
+    background-color: #1E1E1E;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+/* Marca visível no checkbox quando selecionado */
+input[type="checkbox"]:checked::before {
+    content: "✓";
+    color: #e6b800;
+    font-size: 18px;
+    position: absolute;
+    top: -1.9px;
+    left: 8px;
+}
+
+/* Radio base (redondo) */
+input[type="radio"] {
+    appearance: none;
+    width: 22px;
+    height: 22px;
+    border: 2px solid #e6b800;
+    background-color: #1E1E1E;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+input[type="radio"]:checked::before {
+    content: "✓";
+    color: #e6b800;
+    font-size: 18px;
+    position: absolute;
+    top: -1.9px;
+    left: 8px;
+}
+
+/* Marca visível no radio quando selecionado */
+input[type="radio"]:checked::before {
+    content: "";
+    position: absolute;
+    top: 3.5px;
+    left: 11px;
+    width: 10px;
+    height: 10px;
+    background-color: #e6b800;
+    border-radius: 50%;
+}
+
+/* Hover efeito */
+input[type="checkbox"]:hover,
+input[type="radio"]:hover {
+    box-shadow: 0 0 8px rgba(230, 184, 0, 0.5);
+}
+
+/* Texto ao lado */
+.checkbox-groupitem p {
+    margin: 0;
+    font-size: 16px;
+    font-family: "EB Garamond", serif;
+    color: #ffffff;
+}
+
+textarea {
+    background-color: #1E1E1E;
+    color: #ffffff;
+    font-family: "EB Garamond", serif;
+    font-size: 16px;
+    border: 2px solid #fefefe;
+    border-radius: 10px;
+    padding: 12px 16px;
+    width: 100%;
+    max-width: 600px;
+    min-height: 120px;
+    resize: vertical;
+    /* permite redimensionar para cima/baixo */
+    box-shadow: 0 0 6px rgba(230, 184, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #fbfbf9;
+    background-color: #1E1E1E;
+    box-shadow: 0 0 10px rgba(230, 184, 0, 0.4);
+}
+
+textarea::placeholder {
+    color: #fefefe;
+    font-style: italic;
+}
+
+.botao-enviar {
+    background-color: #e6b800;
+    color: #00001b;
+    font-family: "Cinzel Decorative", serif;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    padding: 14px 40px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 30px;
+    box-shadow: 0 6px 15px rgba(230, 184, 0, 0.3);
+    letter-spacing: 1px;
+    display: block;
+    margin: 30px auto 0 auto;
+}
+
+.botao-enviar:hover {
+    background-color: #fff3b3;
+    color: #000;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(230, 184, 0, 0.5);
+}
+
+label {
+
+    color: white;
+    padding: 0 5px;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    left: 1em;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+input {
+    color: rgb(255, 252, 252);
+    border: 2px solid rgb(252, 253, 253);
+    background-color: transparent;
+    border-radius: 5px;
+    width: 300px;
+    height: 60px;
+    padding: 0 1rem;
+    outline: none;
+}
+
+input:focus~label,
+input:valid~label {
+    top: 0;
+    background-color: #1E1E1E;
+    font-size: 0.7rem;
+}
+

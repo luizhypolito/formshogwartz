@@ -1,0 +1,209 @@
+.topo {
+    display: flex;
+    justify-content: space-between;
+    background-color: #00001b;
+    height: 110px;
+    border: 1px #515151 solid;
+}
+
+#titulo {
+    margin-left: 67px;
+}
+
+#links {
+    width: 145px;
+    margin: auto 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#barraPesquisa {
+    background-color: #1a1a2a;
+    border: solid 1px;
+    border-radius: 15px;
+    width: 300px;
+    height: 35px;
+    margin: auto 30px;
+}
+
+#textoBusca {
+    float: left;
+    color: #FFFFFF;
+    background-color: transparent;
+    padding-left: 5px;
+    font-style: italic;
+    font-size: 18px;
+    border: none;
+    height: 32px;
+    width: 260px;
+}
+
+#base {
+    background-color: #00001b;
+    color: #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    background-color: #00001b;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+li {
+    float: none;
+}
+
+li a {
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #00001b;
+    background-color: #00001b;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    /* Ensures the footer is fixed at the bottom of the page */
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center
+}
+
+.caixa {
+    background-color: #1E1E1E;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+#conteudo-footer {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    border: solid rgb(255, 255, 255) 3px;
+    border-radius: 15px;
+    color: rgb(255, 255, 255);
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.rodapeconteiner {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.logos {
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    margin: auto 70px;
+}
+
+a {
+    text-decoration: none;
+    padding-bottom: 10px;
+    color: rgb(255, 255, 255);
+}
+
+.rights {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    margin: 0 auto;
+    width: 100%;
+    padding: 10px 0;
+}
+
+#hoglogo {
+    height: 75px;
+    width: 250px;
+    padding: 10px;
+}
+
+#casas {
+    margin-bottom: 10px;
+}
+
+.titulop {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.borda {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grupo-nome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.grupo-nome input {
+    width: 300px;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 20px !important;
+}
+
+.checkbox-groupitem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 0 !important;
+}
+
+.tamanhoinput[type="checkbox"],
+.tamanhoinput[type="radio"] {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+}
+
+.texto.alinhar.textop {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.2;
+}
+
+.borda h1,
+.borda label {
+    margin-bottom: 20px !important;
+}
+
+.borda h1.titulo,
+.borda h1.texto {
+    margin-bottom: 20px;
+    margin-top: 0;
+}

@@ -1,0 +1,67 @@
+.fundo {
+    background-color: #00001b;
+}
+
+
+.borda {
+    background-color: #1E1E1E;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 40px;
+    max-width: 700px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(230, 184, 0, 0.2);
+}
+
+.titulop1 {
+    color: #e6b800;
+    font-family: "Cinzel Decorative", serif;
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.textop1 {
+    color: #ffffff;
+    font-family: "EB Garamond", serif;
+    font-size: 20px;
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+p {
+    text-align: justify;
+}
+
+.textop2 {
+    color: #e6b800;
+    max-width: 600px;
+}
+
+.tabela-hogwarts {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    color: white;
+     font-family: "EB Garamond", serif;
+}
+
+.tabela-hogwarts th,
+.tabela-hogwarts td {
+    border: 1px solid #d4af37;
+    padding: 12px;
+    text-align: left;
+}
+
+.tabela-hogwarts th {
+    background-color: #2a2a2a;
+    color: #d4af37;
+}
+
+.tabela-hogwarts tr:hover {
+    background-color: #333333;
+}
