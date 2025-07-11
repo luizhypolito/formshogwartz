@@ -1,0 +1,571 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=WDXL+Lubrifont+TC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=WDXL+Lubrifont+TC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=IM+Fell+English+SC&family=WDXL+Lubrifont+TC&display=swap');
+
+
+h1 {
+  font-family: "Cinzel Decorative", serif;
+
+}
+
+h3 {
+
+  font-family: "WDXL Lubrifont TC", sans-serif;
+}
+
+p {
+
+  font-family: "EB Garamond", serif;
+}
+
+body {
+  background-color: #00001b;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #ffffff;
+}
+
+
+.comeco {
+
+  border: solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  /*Definir "poder" de exibição na tela, quem fica em cima (sobreposto)*/
+  height: 500px;
+
+}
+
+.section {
+
+  position: relative;
+  /*Manter sua posição normal no layout, mas eu posso movê-lo usando top, left, right ou bottom*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  /*Corta se ultrapassar uma definição, por exemplo 100px e esta 150 ele corta*/
+  margin-bottom: 20px;
+
+}
+
+.video {
+
+  overflow: hidden;
+  /*Corta se ultrapassar uma definição, por exemplo 100px e esta 150 ele corta*/
+  position: absolute;
+  /* Remove o elemento do fluxo normal, deixa ele em qualquer canto da tela e não liga para nada*/
+  width: 100%;
+  z-index: -1;
+  /*Definir "poder" de exibição na tela, quem fica em cima (sobreposto)*/
+
+}
+
+.container-texto {
+
+  position: absolute;
+  left: 200px;
+  bottom: 100px;
+  font-size: 25px;
+
+  h3 {
+    color: #f1ba8c;
+  }
+
+  h1 {
+
+    position: absolute;
+    bottom: 40px;
+  }
+}
+
+
+.container-corpo-texto {
+
+  display: flex;
+  border: 5px solid #855f35;
+  border-radius: 3%;
+  background-color: #855f35;
+  color: black;
+  width: 800px;
+  align-items: center;
+  justify-content: center;
+
+  p {
+
+    text-align: justify;
+  }
+}
+
+.corpo-texto {
+
+  display: inline-block;
+  font-size: 20px;
+  padding: 20px;
+
+  h1 {
+    font-size: 25px;
+  }
+
+}
+
+.container-corpo-texto-direita {
+
+  align-items: center;
+  justify-content: center;
+}
+
+.corpo-imagem {
+
+  width: 100pxpx;
+  padding-right: 10px;
+  transition: transform 0.3s ease;
+  box-shadow: 0.3s ease;
+
+  img {
+
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    object-position: top-center;
+
+  }
+
+}
+
+.imagem-abcorpo {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px;
+}
+
+.container-imagens {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.imagens {
+
+  width: 250px;
+  height: 350px;
+  object-fit: cover;
+  object-position: top;
+  margin: 10px;
+}
+
+.container-corpo-geral {
+
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.container-corpo-texto-direita {
+
+
+  display: flex;
+  border: 5px solid #855f35;
+  border-radius: 3%;
+  background-color: #855f35;
+  color: black;
+  width: 800px;
+
+  p {
+
+    text-align: justify;
+  }
+}
+
+.corpo-texto-direita {
+
+  display: inline-block;
+  font-size: 20px;
+  padding: 20px;
+
+  h1 {
+    font-size: 25px;
+  }
+
+
+}
+
+.container-corpo-abaixo {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.corpo-texto-abaixo {
+
+  text-align: center;
+  border: 5px solid #855f35;
+  border-radius: 3%;
+  background-color: #855f35;
+  color: black;
+  margin-top: 20px;
+  padding: 20px;
+  width: 800px;
+
+  p {
+
+    text-align: justify;
+  }
+}
+
+.container-imagens {
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.coitaner-detalhes-imagens {
+
+  h1 {
+
+    font-size: 20px;
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+  }
+
+}
+
+.caixa-imagens {
+
+  margin: 20px;
+  width: 270px;
+}
+
+.container-abaixo-detalhes {
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.cointainer-geral-abaixo {
+
+  display: flex;
+  justify-content: space-evenly;
+  width: auto;
+
+}
+
+.abaixo-detalhes {
+
+  display: inline-block;
+  align-items: stretch;
+  justify-content: center;
+  border: 5px solid #855f35;
+  border-radius: 3%;
+  background-color: #855f35;
+  color: black;
+  font-size: 20px;
+  padding: 20px;
+  width: 400px;
+
+  h1 {
+    font-size: 25px;
+
+  }
+
+}
+
+.abaixo-detalhes-direito {
+
+  display: inline-block;
+  align-items: stretch;
+  justify-content: center;
+  border: 5px solid #855f35;
+  border-radius: 3%;
+  background-color: #855f35;
+  color: black;
+  font-size: 20px;
+  padding: 20px;
+  margin-left: 20px;
+  width: 400px;
+
+  h1 {
+    font-size: 25px;
+  }
+
+}
+
+.container-finall {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-texto-final {
+
+  display: flex;
+  border: 5px solid #855f35;
+  border-radius: 3%;
+  background-color: #855f35;
+  color: black;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+  width: 650px;
+
+}
+
+.texto-final {
+
+  display: inline-block;
+  font-size: 20px;
+  padding: 20px;
+
+  h1 {
+    font-size: 25px;
+  }
+
+
+}
+
+.imagens-finais {
+
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  padding: 20px;
+  gap: 10px;
+}
+
+.container-geral-poema {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.container-textinho {
+
+  border: 5px solid #855f35;
+  border-radius: 3%;
+  background-color: #855f35;
+  color: black;
+  width: 400px;
+
+
+}
+
+.textinho-poema {
+
+  font-size: 20px;
+  padding: 20px;
+
+  h1 {
+    font-size: 25px;
+  }
+
+
+}
+
+.container-direita-poema {
+
+  border: 5px solid #855f35;
+  border-radius: 3%;
+  background-color: #855f35;
+  color: black;
+  width: 400px;
+  margin-left: 100px;
+}
+
+.poema {
+
+  font-size: 20px;
+  padding: 20px;
+
+  h1 {
+    font-size: 25px;
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.topo {
+  display: flex;
+  justify-content: space-between;
+  background-color: #00001b;
+  height: 110px;
+  border: 1px #ffffff solid;
+  border-radius: 10px;
+}
+
+#titulo {
+  margin-left: 67px;
+}
+
+#links {
+  width: 145px;
+  margin: auto 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#barraPesquisa {
+  background-color: #1a1a2a;
+  border: solid 1px;
+  border-radius: 15px;
+  width: 300px;
+  height: 35px;
+  margin: auto 30px;
+}
+
+#textoBusca {
+  float: left;
+  color: #FFFFFF;
+  background-color: transparent;
+  padding-left: 5px;
+  font-style: italic;
+  font-size: 18px;
+  border: none;
+  height: 32px;
+  width: 260px;
+}
+
+#base {
+  background-color: #00001b;
+  color: #FFFFFF;
+  border-bottom: 1px solid #FFFFFF;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  background-color: #00001b;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+li {
+  float: none;
+}
+
+li a {
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+  background-color: #00001b;
+  padding-top: 60px;
+  align-items: center;
+  justify-content: center;
+}
+
+.caixa {
+  background-color: #1E1E1E;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+#conteudo-footer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  border: solid rgb(255, 255, 255) 3px;
+  border-radius: 15px;
+  color: rgb(255, 255, 255);
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.rodapeconteiner {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.logos {
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  margin: auto 70px;
+}
+
+a {
+  text-decoration: none;
+  padding-bottom: 10px;
+  color: rgb(255, 255, 255);
+}
+
+.rights {
+  display: flex;
+  text-align: center;
+  color: #ffffff;
+  align-content: center;
+  justify-content: center;
+
+}
+
+#hoglogo {
+  height: 75px;
+  width: 250px;
+  padding: 10px;
+}
+
+#casas {
+  margin-bottom: 10px;
+}

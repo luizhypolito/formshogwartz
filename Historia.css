@@ -1,0 +1,262 @@
+body{
+font-family: Arial, sans-serif;
+  background-color: #00001b;
+  line-height: 1.6;
+  color: #ffffff;
+}
+
+footer {
+  background-color: #00001b;
+  padding-top: 60px;
+  align-items: center;
+  justify-content: center;
+}
+
+.caixa {
+  background-color: #1E1E1E;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+#conteudo-footer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  border: solid rgb(255, 255, 255) 3px;
+  border-radius: 15px;
+  color: rgb(255, 255, 255);
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.rodapeconteiner {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.logos {
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  margin: auto 70px;
+}
+
+a {
+  text-decoration: none;
+  padding-bottom: 10px;
+  color: rgb(255, 255, 255);
+}
+
+.rights {
+  display: flex;
+  text-align: center;
+  color: #ffffff;
+  align-content: center;
+  justify-content: center;
+
+}
+
+#hoglogo {
+  height: 75px;
+  width: 250px;
+  padding: 10px;
+}
+
+#casas {
+  margin-bottom: 10px;
+}
+
+.topo {
+  display: flex;
+  justify-content: space-between;
+  background-color: #00001b;
+  height: 110px;
+  border: 1px #ffffff solid;
+  border-radius: 10px;
+}
+
+#titulo {
+  margin-left: 67px;
+}
+
+#links {
+  width: 145px;
+  margin: auto 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#barraPesquisa {
+  background-color: #1a1a2a;
+  border: solid 1px;
+  border-radius: 15px;
+  width: 300px;
+  height: 35px;
+  margin: auto 30px;
+}
+
+#textoBusca {
+  float: left;
+  color: #FFFFFF;
+  background-color: transparent;
+  padding-left: 5px;
+  font-style: italic;
+  font-size: 18px;
+  border: none;
+  height: 32px;
+  width: 260px;
+}
+
+#base {
+  background-color: #00001b;
+  color: #FFFFFF;
+  border-bottom: 1px solid #FFFFFF;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  background-color: #00001b;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+li {
+  float: none;
+}
+
+li a {
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+
+
+
+#timeline {
+  display: flex;
+  background-color: #00001b;
+
+  &:hover {
+    .tl-item {
+      width: 23.3333%;
+    }
+  }
+}
+
+.tl-item {
+  transform: translate3d(0, 0, 0);
+  position: relative;
+  width: 25%;
+  height: 100vh;
+  min-height: 600px;
+  color: #fff;
+  overflow: hidden;
+  transition: width 0.5s ease;
+  
+  &:before, &:after {
+    transform: translate3d(0, 0, 0);
+    content: '';
+    position: absolute;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+  }
+
+  &:after {
+    background: transparentize(#00001b, 0.15);
+    opacity: 1;
+    transition: opacity 0.5s ease;
+  }
+
+  &:before {
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 75%);
+    z-index: 1;
+    opacity: 0;
+    transform: translate3d(0, 0, 0) translateY(50%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+
+  &:hover {
+    width: 30% !important;
+    
+    &:after {
+      opacity: 0;
+    }
+
+    &:before {
+      opacity: 1;
+      transform: translate3d(0, 0, 0) translateY(0);
+      transition: opacity 1s ease, transform 1s ease 0.25s;
+    }
+    
+    .tl-content {
+      opacity: 1;
+      transform: translateY(0);
+      transition: all 0.75s ease 0.5s;
+    }
+
+    .tl-bg {
+      filter: grayscale(0);
+    }
+  }
+}
+
+.tl-content {
+  transform: translate3d(0, 0, 0) translateY(25px);
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  margin: 0 1.618em;
+  top: 55%;
+  opacity: 0;
+  
+  h1 {
+    font-family: 'Pathway Gothic One',Helvetica Neue,Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+    color: #1779cf;
+    font-size: 1.44rem;
+    font-weight: normal;
+  }
+}
+
+.tl-year {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 1;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  
+  p {
+    font-family: 'Pathway Gothic One',Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 1.728rem;
+    line-height: 0;
+  }
+}
+
+.tl-bg {
+  transform: translate3d(0, 0, 0);
+  position: absolute;
+  width: 100%; height: 100%;
+  top: 0; left: 0;
+  background-size: cover;
+  background-position: center center;
+  transition: filter 0.5s ease;
+  filter: grayscale(100%);
+}
